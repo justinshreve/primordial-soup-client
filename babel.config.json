@@ -1,0 +1,22 @@
+{
+  "plugins": [
+      [
+        "@babel/plugin-transform-runtime"
+      ]
+    ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "corejs": 2,
+        "useBuiltIns": "entry",
+        "shippedProposals": true,
+        "targets": { "node": "current" }
+      }
+    ],
+    ["@babel/preset-typescript", { "optimizeConstEnums": true }],
+    ["@babel/preset-react", {
+      "runtime": "automatic"
+    }]
+  ]
+}

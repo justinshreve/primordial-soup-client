@@ -1,0 +1,9 @@
+out**
+node_modules/**
+vendor/**
+/.cache/
+config
+react-app-env.d.ts
+setupTests.ts
+scripts
+public
